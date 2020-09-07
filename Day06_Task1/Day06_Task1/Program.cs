@@ -74,15 +74,33 @@ namespace Day06_Task1
 
         private static void RemoveElement(List<string> lst, int rem)
         {
-            lst.RemoveAt(rem);
+            try
+            {
+                lst.RemoveAt(rem);
+            }
+            catch
+            {
+                Console.WriteLine("kļūda ievadē");
+            }
         }
 
         private static void AddElement(List<string> lst)
         {
-            Console.WriteLine();
-            Console.WriteLine("Ievadiet elementu!");
-            lst.Add(Console.ReadLine());
-            Console.WriteLine();
+
+            try
+            {
+
+                Console.WriteLine();
+                Console.WriteLine("Ievadiet elementu!");
+                lst.Add(Console.ReadLine());
+                Console.WriteLine();
+
+            }
+            catch
+            {
+                Console.WriteLine("Kļūda ievadē");
+            }
+
         }
 
         private static void PrintLst(List<string> lst)
