@@ -39,7 +39,7 @@ namespace Day06_Task1
             {
                 Console.WriteLine("1- Izvadit");
                 Console.WriteLine("2- Pievienot");
-                Console.WriteLine("3- Pievienot");
+                Console.WriteLine("3- Noņemt elementu");
                 Console.WriteLine("0- Iziet");
 
                 choice = Console.ReadLine();
