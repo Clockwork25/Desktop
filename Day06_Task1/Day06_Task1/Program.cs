@@ -58,9 +58,16 @@ namespace Day06_Task1
 
                         PrintLst(lst);
 
-                        int rem = Convert.ToInt32(Console.ReadLine());
+                        try
+                        {
+                            int rem = Convert.ToInt32(Console.ReadLine());
+                            RemoveElement(lst, rem);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Kļūda ievadē! Ievadi skaitli.");
+                        }
 
-                        RemoveElement(lst, rem);
 
                         break;
                     case "0":
