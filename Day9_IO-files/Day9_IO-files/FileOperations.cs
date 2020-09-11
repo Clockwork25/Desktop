@@ -22,8 +22,7 @@ namespace Day9_IO_files
                 StreamWriter sw = new StreamWriter(File());
                 //                                           ^^^^^^^^^
                 //                                    fails tiek pārrakstīts, ja false, vai ir atstāts  tukšs
-                sw.WriteLine("Hello ");
-                sw.WriteLine("world!");
+                sw.WriteLine("");
                 sw.Close();
             }
             catch

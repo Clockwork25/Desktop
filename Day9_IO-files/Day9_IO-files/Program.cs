@@ -4,7 +4,7 @@ namespace Day9_IO_files
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             FileOperations.Write();
 
