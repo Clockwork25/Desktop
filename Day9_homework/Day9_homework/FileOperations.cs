@@ -62,11 +62,16 @@ namespace Day9_homework
                 Console.WriteLine("Neizdevas ierakstit faila!");
             }
 
+
+        }
+
+        internal static void Overwrite(List<int> lst)
+        {
             //pārraksta failu, ar tikai int vērtībām no atmiņas
 
             StreamWriter overwriter = new StreamWriter(filename);
             List<String> ToFile = new List<String>();
-            for (int i = 0; i<lst.Count; i++)
+            for (int i = 0; i < lst.Count; i++)
             {
                 ToFile.Add(Convert.ToString(lst[i]));
             }
@@ -75,6 +80,8 @@ namespace Day9_homework
                 overwriter.WriteLine(elem);
             }
             overwriter.Close();
+
+            Console.WriteLine("Skaitļi ir pārrakstīti failā: " + filename);
         }
     }
 }

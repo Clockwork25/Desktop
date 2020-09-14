@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace Day9_homework
 {
@@ -45,12 +46,18 @@ namespace Day9_homework
                         SumElements(lst);
                         break;
                     case "0":
+                        Save(lst);
                         break;
                     default:
                         Console.WriteLine("Nepareiza ievade");
                         break;
                 }
             }
+        }
+
+        private static void Save(List<int> lst)
+        {
+            FileOperations.Overwrite(lst);
         }
 
         private static void SumElements(List<int> lst)
