@@ -1,0 +1,23 @@
+#game-window {
+    display: grid;
+    height: 300px;
+    width: 300px;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 10px;
+}
+/* #tic-tac-toe button:first-child{
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+} */
+
+#game-button-style {
+
+}
+
+#reset {
+    margin: 0 auto;
+}
